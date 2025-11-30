@@ -32,10 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
         feedbackDiv.style.display = "block";
 
         if (isValid) {
-            feedbackDiv.innerHTML = "Form submitted successfully!";
+            feedbackDiv.textContent = "Registration Successful!";
             feedbackDiv.style.color = "#28a745";
         } else {
-            feedbackDiv.innerHTML = messages.join("<br>");
+            feedbackDiv.innerHTML = messages.join("\n");
             feedbackDiv.style.color = "#dc3545";
         }
     });
